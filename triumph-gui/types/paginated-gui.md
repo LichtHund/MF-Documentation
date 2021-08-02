@@ -6,7 +6,7 @@ description: Simple GUI that allows you to have multiple pages and navigate betw
 
 ![](../../.gitbook/assets/ezgif-6-90e434269b68.gif)
 
-## Creating a Paginated GUI
+### Creating a Paginated GUI
 
 To create a Paginated GUI all you need to do is:
 
