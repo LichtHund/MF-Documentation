@@ -37,7 +37,3 @@
   * [Adventure](message/mf-msg/adventure.md)
   * [Change Log](message/mf-msg/change-log.md)
 
----
-
-* [Untitled](untitled.md)
-
