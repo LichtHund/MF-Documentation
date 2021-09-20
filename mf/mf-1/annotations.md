@@ -65,7 +65,7 @@ Follow the example under:
 
 ```java
 @CompletionFor("subcommand")
-public List<String> commandCompletion(final List<String> completionArguments) {
+public List<String> commandCompletion(final CommandSender commandSender, final List<String> completionArguments) {
     // Handle the tab completion for the Sub Command "test" here.
     
     return new ArrayList<>();
