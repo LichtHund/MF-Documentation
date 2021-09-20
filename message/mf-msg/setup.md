@@ -7,7 +7,7 @@ description: This is how you add MF-MSG to your project.
 ## Version
 
 Make sure to replace `{version}` with the latest version of **MF-MSG**.  
-Latest version: `2.0.1`
+Latest version: `2.2.4-SNAPSHOT`
 
 {% tabs %}
 {% tab title="Gradle" %}
@@ -19,7 +19,7 @@ repositories {
 }
 
 dependencies {
-    implementation "me.mattstudios:mf-msg-bukkit:{version}" // Replace version here 
+    implementation "me.mattstudios:triumph-msg-bukkit:{version}" // Replace version here 
 }
 ```
 
@@ -30,7 +30,7 @@ Replace `[YOUR PACKAGE]`with your plugin's package, for example `me.myplugin.plu
 apply plugin: 'com.github.johnrengelman.shadow'
 
 shadowJar {
-   relocate 'me.mattstudios.mfmsg', '[YOUR PACKAGE].mfmsg'
+   relocate 'me.mattstudios.msg', '[YOUR PACKAGE].mfmsg'
 }
 ```
 {% endtab %}
@@ -41,7 +41,7 @@ You need to add the dependency to your `pom.xml`.
 ```markup
 <dependency>
   <groupId>me.mattstudios</groupId>
-  <artifactId>mf-message-bukkit</artifactId>
+  <artifactId>triumph-msg-bukkit</artifactId>
   <version>{version}</version> <!-- replace version here -->
 </dependency>
 ```
@@ -57,7 +57,7 @@ Replace `[YOUR PACKAGE]`with your plugin's package, for example `me.myplugin.plu
     <configuration>
         <relocations>
             <relocation>
-                <pattern>me.mattstudios.mfmsg</pattern>
+                <pattern>me.mattstudios.msg</pattern>
                 <shadedPattern>[YOUR PACKAGE].mfmsg</shadedPattern> <!-- Replace package here here -->
             </relocation>
         </relocations>
