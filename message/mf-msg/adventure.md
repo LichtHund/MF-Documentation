@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    implementation "me.mattstudios:mf-msg-adventure:{version}" // Replace version here 
+    implementation "me.mattstudios:triumph-msg-adventure:{version}" // Replace version here 
 }
 ```
 
@@ -27,7 +27,7 @@ Replace `[YOUR PACKAGE]`with your plugin's package, for example `me.myplugin.plu
 apply plugin: 'com.github.johnrengelman.shadow'
 
 shadowJar {
-   relocate 'me.mattstudios.mfmsg', '[YOUR PACKAGE].mfmsg'
+   relocate 'me.mattstudios.msg', '[YOUR PACKAGE].mfmsg'
 }
 ```
 {% endtab %}
@@ -38,7 +38,7 @@ You need to add the dependency to your `pom.xml`.
 ```markup
 <dependency>
   <groupId>me.mattstudios</groupId>
-  <artifactId>mf-message-adventure</artifactId>
+  <artifactId>triumph-msg-adventure</artifactId>
   <version>{version}</version> <!-- replace version here -->
 </dependency>
 ```
@@ -54,7 +54,7 @@ Replace `[YOUR PACKAGE]`with your plugin's package, for example `me.myplugin.plu
     <configuration>
         <relocations>
             <relocation>
-                <pattern>me.mattstudios.mfmsg</pattern>
+                <pattern>me.mattstudios.msg</pattern>
                 <shadedPattern>[YOUR PACKAGE].mfmsg</shadedPattern> <!-- Replace package here here -->
             </relocation>
         </relocations>
@@ -74,7 +74,9 @@ Replace `[YOUR PACKAGE]`with your plugin's package, for example `me.myplugin.plu
 
 ### Using it
 
-Everything is the same as the bukkit version of the lib. Only change is that instead of `BukkitMessage`, it's `AdventureMessage`.
+There are some major diferences between the bukkit version and this version of the lib.
+For starters, you use `AdventureMessage` instead of `BukkitMessage`.
+The lib also just parses the text to an Adventure component. You will have to use Adventure to make it into a BossBar, Title or SubTitle. You will also have to use Adventure's audiences to deliver the messages.
 
 ```java
 final AdventureMessage message = AdventureMessage.create();

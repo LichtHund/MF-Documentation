@@ -42,11 +42,12 @@ The syntax for actions are simple, the text that'll be displayed goes in the `[ 
 * **Hover** - Displays a hover message, `[**Message**](hover: <r>Hover message here!)` both supports the markdown syntax as well.
 * **Command** - Runs a command when clicked `[**Message**](command: /home)` if no `/` is present, it'll just say the message in chat instead, when clicking.
 * **Suggest** - Suggests a command when clicked`[**Message**](suggest: /home)`
-* Clipboard - Copies the text to clipboard when clicked`[**Message**](clipboard: This will be copied)`
+* **Clipboard** - Copies the text to clipboard when clicked`[**Message**](clipboard: This will be copied)`
 * **Url** -  Opens a URL link when clicked`[**Message**](url: https://mf.mattstudios.me/)`
 
 {% hint style="info" %}
 To have an action with both hover and a click event use the separator `|`, which can also be escaped like `\|`.
+Example: `[**Message**](clipboard: This will be copied|hover: Hover message here!)`
 {% endhint %}
 
 
