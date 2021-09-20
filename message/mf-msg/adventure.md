@@ -74,7 +74,9 @@ Replace `[YOUR PACKAGE]`with your plugin's package, for example `me.myplugin.plu
 
 ### Using it
 
-Everything is the same as the bukkit version of the lib. Only change is that instead of `BukkitMessage`, it's `AdventureMessage`.
+There are some major diferences between the bukkit version and this version of the lib.
+For starters, you use `AdventureMessage` instead of `BukkitMessage`.
+The lib also just parses the text to an Adventure component. You will have to use Adventure to make it into a BossBar, Title or SubTitle. You will also have to use Adventure's audiences to deliver the messages.
 
 ```java
 final AdventureMessage message = AdventureMessage.create();
