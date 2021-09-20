@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    implementation "me.mattstudios:mf-msg-adventure:{version}" // Replace version here 
+    implementation "me.mattstudios:triumph-msg-adventure:{version}" // Replace version here 
 }
 ```
 
@@ -27,7 +27,7 @@ Replace `[YOUR PACKAGE]`with your plugin's package, for example `me.myplugin.plu
 apply plugin: 'com.github.johnrengelman.shadow'
 
 shadowJar {
-   relocate 'me.mattstudios.mfmsg', '[YOUR PACKAGE].mfmsg'
+   relocate 'me.mattstudios.msg', '[YOUR PACKAGE].mfmsg'
 }
 ```
 {% endtab %}
@@ -38,7 +38,7 @@ You need to add the dependency to your `pom.xml`.
 ```markup
 <dependency>
   <groupId>me.mattstudios</groupId>
-  <artifactId>mf-message-adventure</artifactId>
+  <artifactId>triumph-msg-adventure</artifactId>
   <version>{version}</version> <!-- replace version here -->
 </dependency>
 ```
@@ -54,7 +54,7 @@ Replace `[YOUR PACKAGE]`with your plugin's package, for example `me.myplugin.plu
     <configuration>
         <relocations>
             <relocation>
-                <pattern>me.mattstudios.mfmsg</pattern>
+                <pattern>me.mattstudios.msg</pattern>
                 <shadedPattern>[YOUR PACKAGE].mfmsg</shadedPattern> <!-- Replace package here here -->
             </relocation>
         </relocations>

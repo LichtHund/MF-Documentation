@@ -12,7 +12,7 @@ This will be the base of every message you parse.
 
 ## Message Options
 
-You can also specify some message options to he message creator, this allows you to control how the message will be parsed.
+You can also specify some message options to the message creator, this allows you to control how the message will be parsed.
 
 The base of the message options is the `MessageOptions` builder:
 
@@ -26,7 +26,7 @@ With it you can remove some formats:
 final MessageOptions messageOptions = MessageOptions.builder().removeFormat(Format.BOLD).build();
 ```
 
-In this example BOLD format will be remove, it'll not parse the bold portion of the message.
+In this example, the BOLD format will be removed and it'll not parse the bold portion of the message.
 
 You can also set a default color to be used in the messages:
 
@@ -48,13 +48,13 @@ final BukkitMessage message = Message.create(messageOptions);
 
 ## Parsing
 
-Finally all it's left is parsing the message:
+Finally all there is left to do is parsing the message:
 
 ```java
 final MessageComponent component = message.parse("**Hello** __everyone__!");
 ```
 
-The `MessageComponent` holds the parsed values that you can be used for anything you want.
+The `MessageComponent` holds the parsed values that you can use for anything you want.
 
 ```java
 // Sends JSON message
