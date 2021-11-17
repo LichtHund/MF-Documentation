@@ -30,6 +30,7 @@ If rows are used instead of the type, it'll use `GuiType.CHEST`.
 
 * CHEST - Default - 0 to 53 slots
 * WORKBENCH - 0 to 9 slots
+* HOPPER - 0 to 4 slots
 * DISPENSER - 0 to 8 slots
 * BREWING - 0 to 4 slots
 
